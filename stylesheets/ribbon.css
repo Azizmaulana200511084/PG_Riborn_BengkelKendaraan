@@ -1,0 +1,52 @@
+QToolBar {
+    padding: 0px;
+}
+
+QTabWidget:pane {
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    left: 550px;
+    right: 490px;
+    color: white;
+    border: 2px solid midnightblue;
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 rgb(85, 255, 0), stop: 0.8 rgb(41, 115, 0), stop: 1.0 rgb(41, 115, 0));
+    border-bottom: 1px solid rgba(0, 0, 0, 20%);
+    border-top: 1px solid rgba(0, 0, 0, 20%);
+    top: -1;
+}
+
+QTabWidget {
+    align-items: center;
+    align-content: center;
+}
+
+QTabWidget::tab-bar {
+    left: 634px;
+    right: 634px;
+}
+
+QTabBar::tab {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-right: 5px;
+    background: rgb(13, 39, 0);
+    color: white;
+}
+
+QTabBar::tab:hover {
+    background: rgb(41, 115, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+QTabBar::tab:selected {
+    background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #fdfdfd, stop: 1.0 #efefef);
+    color: #2A2A2A;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    border-bottom-color: #f9f9f9;
+}
